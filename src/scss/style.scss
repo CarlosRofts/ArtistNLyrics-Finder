@@ -1,0 +1,41 @@
+//header
+@import url(https://fonts.googleapis.com/css?family=Pacifico:regular); 
+
+//lyric
+@import url(https://fonts.googleapis.com/css?family=Bellota:300,300italic,regular,italic,700,700italic);
+
+//default
+@import url(https://fonts.googleapis.com/css?family=Righteous:regular); 
+
+@import "customBS";
+
+// Base Layout
+*, *::after , *::before {
+    margin: 0;
+    padding: 0;
+  }
+ html,body,#root,.container{
+   min-height: 100vh;
+   background-color: $bgDark;
+   font-family: Righteous;
+ }
+
+body{
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  .rounded-pill{
+    background-color: $primary;
+    transform: translate(300px);
+    animation: enter .4s cubic-bezier(.54,.95,.66,1.39) .3s forwards;
+    @keyframes enter { to{transform: translate(0px); } }
+  }
+  .social{
+    border-radius: 50%;
+    &:hover{
+      // font-size: 3.7rem;
+      border: 2.5px solid white;
+      transition: all .2s linear;
+  }}
+}
+
+ 
