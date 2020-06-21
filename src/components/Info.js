@@ -7,7 +7,7 @@ const Info = ({ info }) => {
 
     return (
         <Card className="bg-dark">
-            <Card.Img variant="top" className=" border rounded  w-50 mx-sm-auto mx-md-0" src={strArtistThumb} alt="Logo" />
+            <Card.Img variant="top" className=" border rounded m-3 w-50 mx-auto mx-md-2" src={strArtistThumb} alt="Logo" />
             <Card.Body>
                 <Card.Title className="font-weight-bolder mb-4" style={{fontSize:"2em"}}>Información del Artista</Card.Title>
                 <Card.Text>
